@@ -91,7 +91,7 @@ const Navbar = () => {
                 <FormLine>
                     <Input type="text" placeholder="Ad Soyadı" />
                     <Input type="text" placeholder="E-Posta Adresi" />
-                    <Button css={buttonCSS}>7 Gün Ücretsiz İzle</Button>
+                    <Button css={buttonCSS} to="/">7 Gün Ücretsiz İzle</Button>
                 </FormLine>
             </Form>
             <Note>Ücretsiz Deneme Sürümü, EXXEN’e yeni üyelikler için geçerlidir.</Note>

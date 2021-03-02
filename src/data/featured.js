@@ -6,6 +6,11 @@ export const featured = [
     { name: "O Ses Türkiye Rap" , poster: "https://image.exxen.com//content/d/gp/34584/Poster.jpg?v=637502291803612426"},
     { name: "Ölüm Zamanı" , poster: "https://image.exxen.com//content/R/ex/34598/Poster.jpg?v=637488401910432303" },
     { name: "Hükümsüz" , poster: "https://image.exxen.com//content/k/zQ/22771/Poster.jpg?v=637502278733785090"},
-    { name: "İşte Bu Benim Masalım" , poster: "https://image.exxen.com//content/5/83/22823/Poster.jpg?v=637502283160819947"}
+    { name: "İşte Bu Benim Masalım" , poster: "https://image.exxen.com//content/5/83/22823/Poster.jpg?v=637502283160819947"},
+    { name: "Şeref Bey" , poster: "https://image.exxen.com//content/B/zW/22357/Poster.jpg?v=637502283912818147"},
+    { name: "Tolgshow Filtersiz" , poster: "https://image.exxen.com//content/j/fv/22481/Poster.jpg?v=637502281438608450"},
+    { name: "Gibi" , poster: "https://image.exxen.com//content/s/2O/22396/Poster.jpg?v=637502782962300420"},
+    { name: "Masterchef Junior" , poster: "https://image.exxen.com//content/o/VY/22502/Poster.jpg?v=637502279593211214"}
+
 
 ];

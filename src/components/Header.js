@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components/macro'
 import {Button} from './Button'
+import logo from '../assets/logo.svg'
 
 const header = css`
     background-color: #ffcb04;
@@ -27,7 +28,7 @@ const Header = () => {
     return (
         <header css={header}>
             <LandingMenu>
-                <Logo src="logo.svg" />
+                <Logo src={logo} />
                 <Button to="/sign-in">Üye Girişi</Button>
             </LandingMenu>
         </header>
