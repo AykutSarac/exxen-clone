@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/exxen-clone/static/js/main.230a17bb.chunk.js",
-    "main.js.map": "/exxen-clone/static/js/main.230a17bb.chunk.js.map",
+    "main.js": "/exxen-clone/static/js/main.b933040b.chunk.js",
+    "main.js.map": "/exxen-clone/static/js/main.b933040b.chunk.js.map",
     "runtime-main.js": "/exxen-clone/static/js/runtime-main.004ed97c.js",
     "runtime-main.js.map": "/exxen-clone/static/js/runtime-main.004ed97c.js.map",
     "static/js/2.b1a31a5b.chunk.js": "/exxen-clone/static/js/2.b1a31a5b.chunk.js",
@@ -9,11 +9,13 @@
     "static/js/3.bc099b9a.chunk.js": "/exxen-clone/static/js/3.bc099b9a.chunk.js",
     "static/js/3.bc099b9a.chunk.js.map": "/exxen-clone/static/js/3.bc099b9a.chunk.js.map",
     "index.html": "/exxen-clone/index.html",
-    "static/js/2.b1a31a5b.chunk.js.LICENSE.txt": "/exxen-clone/static/js/2.b1a31a5b.chunk.js.LICENSE.txt"
+    "static/js/2.b1a31a5b.chunk.js.LICENSE.txt": "/exxen-clone/static/js/2.b1a31a5b.chunk.js.LICENSE.txt",
+    "static/media/devices.29e45744.svg": "/exxen-clone/static/media/devices.29e45744.svg",
+    "static/media/logo.ed0bacbc.svg": "/exxen-clone/static/media/logo.ed0bacbc.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.004ed97c.js",
     "static/js/2.b1a31a5b.chunk.js",
-    "static/js/main.230a17bb.chunk.js"
+    "static/js/main.b933040b.chunk.js"
   ]
 }
