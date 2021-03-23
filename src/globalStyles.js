@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
         background-color: #000000;
     }
 
-    section.true {
+    nav.sticky {
         position: fixed;
     }
 `;

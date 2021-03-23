@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled, { css } from 'styled-components/macro'
 import { Button } from './Button'
 
-const Nav = styled.section`
+const Nav = styled.nav`
     top: 0;
     z-index: 20;
     background-color: #121212;
@@ -77,10 +77,20 @@ const buttonCSS = css`
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
+    const [navpos, setNavpos] = useState(130);
+
+    useEffect(() => {
+        const currentPos = document.getElementById('navbar').scrollHeight;
+        setNavpos(currentPos);
+    }, []);
+
 
     const stick = () => {
-        if (window.scrollY >= 120) setNavbar(true)
-        else setNavbar(false)
+        if (window.scrollY >= navpos) {
+            setNavbar(true && "sticky")
+        } else {
+            setNavbar(false && null)
+        }
     }
 
     window.addEventListener("scroll", stick);
