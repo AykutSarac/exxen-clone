@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/exxen-clone/static/js/main.6f1457b8.chunk.js",
-    "main.js.map": "/exxen-clone/static/js/main.6f1457b8.chunk.js.map",
+    "main.css": "/exxen-clone/static/css/main.a72fb6e4.chunk.css",
+    "main.js": "/exxen-clone/static/js/main.c1ae8b7a.chunk.js",
+    "main.js.map": "/exxen-clone/static/js/main.c1ae8b7a.chunk.js.map",
     "runtime-main.js": "/exxen-clone/static/js/runtime-main.d7730951.js",
     "runtime-main.js.map": "/exxen-clone/static/js/runtime-main.d7730951.js.map",
-    "static/js/2.252520a7.chunk.js": "/exxen-clone/static/js/2.252520a7.chunk.js",
-    "static/js/2.252520a7.chunk.js.map": "/exxen-clone/static/js/2.252520a7.chunk.js.map",
+    "static/js/2.e07cb449.chunk.js": "/exxen-clone/static/js/2.e07cb449.chunk.js",
+    "static/js/2.e07cb449.chunk.js.map": "/exxen-clone/static/js/2.e07cb449.chunk.js.map",
     "index.html": "/exxen-clone/index.html",
-    "static/js/2.252520a7.chunk.js.LICENSE.txt": "/exxen-clone/static/js/2.252520a7.chunk.js.LICENSE.txt",
+    "static/css/main.a72fb6e4.chunk.css.map": "/exxen-clone/static/css/main.a72fb6e4.chunk.css.map",
+    "static/js/2.e07cb449.chunk.js.LICENSE.txt": "/exxen-clone/static/js/2.e07cb449.chunk.js.LICENSE.txt",
     "static/media/devices.29e45744.svg": "/exxen-clone/static/media/devices.29e45744.svg",
     "static/media/logo.ed0bacbc.svg": "/exxen-clone/static/media/logo.ed0bacbc.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d7730951.js",
-    "static/js/2.252520a7.chunk.js",
-    "static/js/main.6f1457b8.chunk.js"
+    "static/js/2.e07cb449.chunk.js",
+    "static/css/main.a72fb6e4.chunk.css",
+    "static/js/main.c1ae8b7a.chunk.js"
   ]
 }
