@@ -1,6 +1,6 @@
-import devices from '../assets/devices.svg'
+import devices from '../../assets/devices.svg'
 import styled, { css } from 'styled-components/macro'
-import { download, social } from '../data/footerData' 
+import { download, social } from '../../data/footerData' 
 
 const FooterContent = styled.footer`
     margin-top: 1em;

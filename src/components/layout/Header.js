@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components/macro'
-import {Button} from './Button'
-import logo from '../assets/logo.svg'
+import { Button } from '../layout/Button'
+import logo from '../../assets/logo.svg'
+import { Link } from 'react-router-dom'
 
 const header = css`
     background-color: #ffcb04;
@@ -28,7 +29,7 @@ const Header = () => {
     return (
         <header css={header}>
             <LandingMenu>
-                <Logo src={logo} />
+                <Link to="/"><Logo src={logo} /></Link>
                 <Button to="/sign-in">Üye Girişi</Button>
             </LandingMenu>
         </header>

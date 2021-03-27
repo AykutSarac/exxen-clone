@@ -1,0 +1,16 @@
+export const featured = [
+    { name: "Olağan Şüpheliler", poster: "https://image.exxen.com//content/F/xa/34579/Poster.jpg?v=637488358833199690", id: "1", fragman: 'https://www.youtube.com/embed/ImU_v5eiQ4Y', info: "Üç kadın; Feyza, Zuhal ve Nehir, kocalarının ortak olduğu otelin kuruluş yıldönümünü kutlamak için kocalarına sürpriz yaparlar. Ancak bu sürpriz beklenmedik sonuçlar doğurur. Kendilerini birdenbire türlü aksiyonların ortasında bulan bu kadınların, erkeklerin dünyasına girişi oldukça olaylı olacak... Olağan Şüpheliler, çok yakında...", type: "Komedi" },
+    { name: "Konuşanlar", poster: "https://image.exxen.com//content/n/lC/22377/Poster.jpg?v=637502282473664512", id: "2", fragman: 'https://www.youtube.com/embed/b-B90_CPUsQ', info: "Bu sohbet bildiklerinizden çok farklı. Her insan farklı bir hikaye, her hikaye farklı bir kahkaha. Hasan Can Kaya önce konuşanları seçiyor ardından birbirinden ilginç sorularla eğlence katlanarak artıyor. Konuşanlar, yeni bölümleriyle her Cuma EXXEN'de.", type: "Komedi, Talk Show, Stand Up" },
+    { name: "İlginç Bazı Olaylar", poster: "https://image.exxen.com//content/n/fY/34589/Poster.jpg?v=637488377873132814", id: "3", fragman: 'https://www.youtube.com/embed/igcM6tom2LI', info: "İbo, hayallerinin peşinden koşmayıp Bursa'da ailesinin yanında kalmaya devam etseydi nasıl bir hayatı olurdu? Nişanlısı tarafından terk edilen ve ailesiyle beraber yaşayan 37 yaşındaki İbo acaba ailesinin çizdiği yoldan mı gidecek, yoksa kendi yolunu mu çizecek? İlginç Bazı Olaylar, çok yakında...", type: "Komedi, Dram" },
+    { name: "Bir Yer-altı Sitcomu", poster: "https://image.exxen.com//content/c/tL/34597/Poster.jpg?v=637488400798991142", id: "4", fragman: 'https://www.youtube.com/embed/EghZmVb-AE', info: "" },
+    { name: "O Ses Türkiye Rap", poster: "https://image.exxen.com//content/d/gp/34584/Poster.jpg?v=637502291803612426", id: "5", fragman: 'https://www.youtube.com/embed/y7XdAkGd2Yw' },
+    { name: "Ölüm Zamanı", poster: "https://image.exxen.com//content/R/ex/34598/Poster.jpg?v=637488401910432303", id: "6", fragman: 'https://www.youtube.com/embed/y7XdAkGd2Yw' },
+    { name: "Hükümsüz", poster: "https://image.exxen.com//content/k/zQ/22771/Poster.jpg?v=637502278733785090", id: "7", fragman: 'https://www.youtube.com/embed/y7XdAkGd2Yw' },
+    { name: "İşte Bu Benim Masalım", poster: "https://image.exxen.com//content/5/83/22823/Poster.jpg?v=637502283160819947", id: "8", fragman: 'https://www.youtube.com/embed/y7XdAkGd2Yw' },
+    { name: "Şeref Bey", poster: "https://image.exxen.com//content/B/zW/22357/Poster.jpg?v=637502283912818147", id: "9", fragman: 'https://www.youtube.com/embed/y7XdAkGd2Yw' },
+    { name: "Tolgshow Filtersiz", poster: "https://image.exxen.com//content/j/fv/22481/Poster.jpg?v=637502281438608450", id: "10", fragman: 'https://www.youtube.com/embed/y7XdAkGd2Yw' },
+    { name: "Gibi", poster: "https://image.exxen.com//content/s/2O/22396/Poster.jpg?v=637502782962300420", id: "11", fragman: 'https://www.youtube.com/embed/y7XdAkGd2Yw' },
+    { name: "Masterchef Junior", poster: "https://image.exxen.com//content/o/VY/22502/Poster.jpg?v=637502279593211214", id: "12", fragman: 'https://www.youtube.com/embed/y7XdAkGd2Yw' }
+
+
+];

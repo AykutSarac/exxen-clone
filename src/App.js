@@ -1,18 +1,35 @@
-import Featured from './components/Featured'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Navbar from './components/Navbar'
-import GlobalStyle from './globalStyles'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import Home from './components/pages/Home'
+import MoviePage from './components/pages/MoviePage'
+import Footer from './components/layout/Footer'
+import Header from './components/layout/Header'
+import Navbar from './components/layout/Navbar'
+import { featured } from './data/movieData'
+import './App.css'
+
+// Reset scroll position
+const ScrollToTop = ({ children, location: { pathname } }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return children;
+};
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyle />
+    <Router>
       <Header />
       <Navbar />
-      <Featured />
+      <Switch>
+        <ScrollToTop>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/serie/:id" component={MoviePage} movie={featured} />
+        </ScrollToTop>
+      </Switch>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
