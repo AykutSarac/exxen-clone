@@ -19,7 +19,7 @@ const ScrollToTop = ({ children, location: { pathname } }) => {
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Navbar />
       <Switch>
