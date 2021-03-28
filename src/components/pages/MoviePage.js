@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { featured } from '../../data/movieData'
 import styled, { css } from 'styled-components/macro'
+import { Redirect } from 'react-router-dom'
 
 const divStyle = css`
     display: flex;
     justify-content: center;
     align-items: baseline;
-    width: 70%;
-    margin: 15px auto 3em auto;
+    width: 80%;
+    margin: auto;
     height: 100%;
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
+        align-items: center;
     }
 `
 
@@ -50,17 +52,21 @@ const Fragman = styled.div`
     }
 `
 
+const Summary = styled.p`
+    font-weight: 300;
+    color: white;
+    margin: 10px 0 35px;
+`
+
 const frame = css`
-    height: 85%;
+    height: 32rem;
     width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    position: relative;
     border: none;
-    padding-bottom: 2em;
     
+    @media screen and (max-width: 900px) {
+        height: 18rem;
+    }
 `
 
 const MoviePage = ({ match }) => {
@@ -71,6 +77,8 @@ const MoviePage = ({ match }) => {
         const getMovie = featured.findIndex(movie => movie.id === match.params.id);
         setMovie(featured[getMovie]);
     }, [movie, match.params.id]);
+
+    if (!movie) return <Redirect to="/" />
 
     return (
         <div css={divStyle}>
@@ -83,11 +91,11 @@ const MoviePage = ({ match }) => {
             </PosterContent>
             <Fragman>
                 <h2 className="active">Fragman</h2>
-                <div className="video" style={{ overflow: 'hidden', position: 'relative', paddingTop: '52%' }}>
+                <div className="video" style={{ overflow: 'hidden', position: 'relative' }}>
                     <iframe css={frame} src={movie.fragman} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p style={{ color: 'white', marginTop: '2em', position: 'relative' }}>
+                    <Summary>
                         {movie.info ? movie.info : 'Geçerli bir açıklama bulunamadı.'}
-                    </p>
+                    </Summary>
                 </div>
             </Fragman>
         </div>

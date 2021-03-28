@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import nullImage from '../../assets/null_image_poster.png'
+import PropTypes from 'prop-types'
 
 const Movie = styled(Link)`
     display: flex;
@@ -31,6 +32,10 @@ const MovieItem = ({ movie }) => {
             <Name>{movie.name}</Name>
         </Movie>
     )
+}
+
+MovieItem.propTypes = {
+    movie: PropTypes.object.isRequired
 }
 
 export default MovieItem

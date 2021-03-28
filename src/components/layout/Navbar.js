@@ -82,6 +82,7 @@ const Navbar = () => {
     useEffect(() => {
         const currentPos = document.getElementById('navbar').scrollHeight;
         setNavpos(currentPos);
+        window.scrollTo(0, 0);
     }, []);
 
 
