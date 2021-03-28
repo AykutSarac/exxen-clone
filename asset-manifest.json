@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/exxen-clone/static/css/main.bd9e6362.chunk.css",
-    "main.js": "/exxen-clone/static/js/main.db5dd947.chunk.js",
-    "main.js.map": "/exxen-clone/static/js/main.db5dd947.chunk.js.map",
+    "main.js": "/exxen-clone/static/js/main.f42803f9.chunk.js",
+    "main.js.map": "/exxen-clone/static/js/main.f42803f9.chunk.js.map",
     "runtime-main.js": "/exxen-clone/static/js/runtime-main.d7730951.js",
     "runtime-main.js.map": "/exxen-clone/static/js/runtime-main.d7730951.js.map",
     "static/js/2.32d39c62.chunk.js": "/exxen-clone/static/js/2.32d39c62.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d7730951.js",
     "static/js/2.32d39c62.chunk.js",
     "static/css/main.bd9e6362.chunk.css",
-    "static/js/main.db5dd947.chunk.js"
+    "static/js/main.f42803f9.chunk.js"
   ]
 }
