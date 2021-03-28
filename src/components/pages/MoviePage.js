@@ -7,7 +7,7 @@ const divStyle = css`
     display: flex;
     justify-content: center;
     align-items: baseline;
-    width: 80%;
+    width: 68%;
     margin: auto;
     height: 100%;
 

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const header = css`
     background-color: #ffcb04;
-    height: 120px;
+    height: fit-content;
 `;
 
 const Logo = styled.img`
@@ -21,6 +21,7 @@ const LandingMenu = styled.div`
     margin: 0 auto;
 
     @media screen and (max-width: 920px) {
+        padding: 15px 15px;
         justify-content: space-between;
     }
 `;
