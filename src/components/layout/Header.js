@@ -10,7 +10,7 @@ const header = css`
 
 const Logo = styled.img`
     width: auto;
-    height: clamp(43px, 8vw, 70px);
+    height: clamp(35px, 10vw, 70px);
 `;
 
 const LandingMenu = styled.div`
@@ -20,9 +20,10 @@ const LandingMenu = styled.div`
     padding: 25px 15px;
     margin: 0 auto;
 
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 567px) {
         padding: 15px 15px;
         justify-content: space-between;
+        
     }
 `;
 

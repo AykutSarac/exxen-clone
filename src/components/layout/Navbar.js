@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import styled, { css } from 'styled-components/macro'
-import { Button } from './Button'
+import styled from 'styled-components'
 
 const Nav = styled.nav`
     top: 0;
@@ -14,7 +13,7 @@ const Input = styled.input`
     height: 50px;
     padding: 0px 19px;
     font-size: clamp(16px, 2.5vw, 12px);
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 15px 10px 15px;
     color: #090909;
     width: calc(100% - 30px);
@@ -29,6 +28,14 @@ const Input = styled.input`
 
     @media screen and (max-width: 920px) {
         height: 40px;
+    }
+    
+    &[type='submit'] {
+        background-color: #ffcb04;
+        outline: none;
+        border: none;
+        font-weight: 700;
+        font-size: 1.2rem;
     }
     
 `;
@@ -66,12 +73,6 @@ const Note = styled.p`
     padding-bottom: 15px;
 `;
 
-const buttonCSS = css`
-    width: calc(100% - 30px);
-    text-align: center;
-    font-size: clamp(20px, 1vw, 1.125rem) !important;
-`;
-
 
 
 const Navbar = () => {
@@ -100,9 +101,9 @@ const Navbar = () => {
         <Nav id="navbar" className={navbar}>
             <Form>
                 <FormLine>
-                    <Input type="text" placeholder="Ad Soyadı" />
-                    <Input type="text" placeholder="E-Posta Adresi" />
-                    <Button css={buttonCSS} to="/">7 Gün Ücretsiz İzle</Button>
+                    <Input type="text" placeholder="Ad Soyadı" required />
+                    <Input type="email" placeholder="E-Posta Adresi" required />
+                    <Input type="submit" value="7 Gün Ücretsiz İzle" />
                 </FormLine>
             </Form>
             <Note>Ücretsiz Deneme Sürümü, EXXEN’e yeni üyelikler için geçerlidir.</Note>

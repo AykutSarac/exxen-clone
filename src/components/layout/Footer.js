@@ -11,7 +11,7 @@ const FooterText = styled.h1`
     color: #fff;
     width: 100%;
     margin: 30px auto;
-    font-weight: 600;
+    font-weight: 400;
     padding: 0 15px;
     font-size: clamp(1rem, 2.5vw, 1.8rem);
 

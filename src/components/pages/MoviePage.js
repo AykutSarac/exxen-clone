@@ -14,6 +14,7 @@ const divStyle = css`
     @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        width: 95%;
     }
 `
 
@@ -36,6 +37,7 @@ const PosterContent = styled.div`
 const h1Text = css`
     margin: 12px 0;
     color: white;
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
 `
 
 const InfoBox = styled.div`
@@ -53,7 +55,7 @@ const Fragman = styled.div`
 `
 
 const Summary = styled.p`
-    font-weight: 300;
+    font-weight: 500;
     color: white;
     margin: 10px 0 35px;
 `
@@ -90,7 +92,7 @@ const MoviePage = ({ match }) => {
                 </InfoBox>
             </PosterContent>
             <Fragman>
-                <h2 className="active">Fragman</h2>
+                <h2 className="active" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.35rem)' }}>Fragman</h2>
                 <div className="video" style={{ overflow: 'hidden', position: 'relative' }}>
                     <iframe css={frame} src={movie.fragman} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <Summary>
