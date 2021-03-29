@@ -65,6 +65,10 @@ const Input = styled.input`
     color: white;
     margin-bottom: 1em;
 
+    &:focus {
+        filter: drop-shadow(0 0px 3px rgba(255, 255, 255, 0.5));
+    }
+
     &[type='checkbox'] {
         width: auto;
         margin: 5px;
