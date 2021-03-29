@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { featured } from '../../data/movieData'
 import styled, { css } from 'styled-components/macro'
-import { Redirect } from 'react-router-dom'
+import { Redirect, useParams } from 'react-router-dom'
 
 const divStyle = css`
     display: flex;
@@ -71,14 +71,16 @@ const frame = css`
     }
 `
 
-const MoviePage = ({ match }) => {
+const MoviePage = () => {
+
+    let { id } = useParams();
 
     const [movie, setMovie] = useState({});
 
     useEffect(() => {
-        const getMovie = featured.findIndex(movie => movie.id === match.params.id);
+        const getMovie = featured.findIndex(movie => movie.id === id);
         setMovie(featured[getMovie]);
-    }, [movie, match.params.id]);
+    }, [movie, id]);
 
     if (!movie) return <Redirect to="/" />
 
