@@ -5,7 +5,6 @@ This project is a simplified front end clone of EXXEN. It was created with React
 
 ## Tools used:
 - React
-- react-router-dom
 - styled-components
 
 ## Runing Project Locally
@@ -14,7 +13,7 @@ This project is a simplified front end clone of EXXEN. It was created with React
 
 ## Preview
 
-![preview](https://i.ibb.co/4KsKJQz/aykutsarac-github-io-exxen-clone.png)
+![preview](https://s4.gifyu.com/images/chrome-capture496124190434cba0.gif)
 
 ## Author
 - [AykutSarac](https://github.com/aykutsarac)
