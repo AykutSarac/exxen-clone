@@ -13,7 +13,7 @@ This project is a simplified front end clone of EXXEN. It was created with React
 
 ## Preview
 
-![preview](https://s4.gifyu.com/images/chrome-capture496124190434cba0.gif)
+![preview](https://s4.gifyu.com/images/chrome-capture-min.gif)
 
 ## Author
 - [AykutSarac](https://github.com/aykutsarac)
