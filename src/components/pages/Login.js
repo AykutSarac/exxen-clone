@@ -17,16 +17,17 @@ const Section = styled.div`
     text-align: center;
     display: inline-block;
     overflow: hidden;
+    z-index: 100;
 
     @media screen and (min-width: 768px) {
-        background: url(${desktopBg});
+        background: linear-gradient( rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4) ), url(${desktopBg});
         background-size: cover;
     }
 `
 const Content = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-color: rgb(17, 17, 17, 0.9);
+    background-color: rgb(17, 17, 17, 0.8);
     
     @media screen and (min-width: 768px) {
         width: 32.5rem;
@@ -139,7 +140,9 @@ const Login = () => {
     return (
         <Section>
             <Content>
-                <Logo src={logo} />
+                <Link to="/">
+                    <Logo src={logo} />
+                </Link>
                 <Middle>
                     <Title>Üye Girişi</Title>
                     <Form onSubmit={(e) => e.preventDefault()}>
