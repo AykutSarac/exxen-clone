@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom'
-import React, { useEffect } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Home from './components/pages/Home'
 import Login from './components/pages/Login'
 import MoviePage from './components/pages/MoviePage'
@@ -10,19 +10,41 @@ import './App.css'
 
 
 function App() {
+
+  const [hideComponents, setHideComponents] = useState(false);
+  const [pos, setPos] = useState(0);
+  
+  const hide = (bool) => setHideComponents(bool);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setPos(window.scrollY);
+    });
+  }, []);
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <ScrollTop />
       <div className="App">
-        <Header />
-        <Navbar />
+        {
+          !hideComponents && (
+            <Fragment>
+              <Header />
+              <Navbar pos={pos} />
+            </Fragment>
+          )
+        }
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/serie/:id" component={MoviePage} />
-          <Route exact path="/sign-in" component={Login} />
+          <Route exact path="/sign-in">
+            <Login hide={hide} />
+          </Route>
           <Route component={Home} />
         </Switch>
-        <Footer />
+        {
+          !hideComponents && <Footer />
+        }
       </div>
     </Router>
   );

@@ -76,27 +76,19 @@ const Note = styled.p`
 
 
 
-const Navbar = () => {
+const Navbar = ({ pos }) => {
 
-    const [navbar, setNavbar] = useState(false);
-    const [navpos, setNavpos] = useState(130);
+    const [navbar, setNavbar] = useState('');
 
     useEffect(() => {
         const currentPos = document.getElementById('navbar').scrollHeight;
-        setNavpos(currentPos);
-        window.scrollTo(0, 0);
-    }, []);
-
-
-    const stick = () => {
-        if (window.scrollY >= navpos) {
-            setNavbar(true && "sticky")
+        if (pos >= currentPos) {
+            setNavbar("sticky")
         } else {
-            setNavbar(false && null)
+            setNavbar(null)
         }
-    }
+    }, [pos]);
 
-    window.addEventListener("scroll", stick);
 
     return (
         <Nav id="navbar" className={navbar}>

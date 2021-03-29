@@ -12,7 +12,6 @@ const Section = styled.div`
     background-repeat: no-repeat;
     min-height: 100%;
     width: 100%;
-    position: absolute;
     top: 0;
     text-align: center;
     display: inline-block;
@@ -131,11 +130,13 @@ const CreateAccount = styled.div`
     }
 `
 
-const Login = () => {
+const Login = ({ hide }) => {
 
     useEffect(() => {
-        document.body.style.height = '100vh';
-    }, []);
+        hide(true);
+        window.removeEventListener('scroll', () => {});
+        return () => hide(false);
+    }, [hide]);
 
     return (
         <Section>
