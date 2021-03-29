@@ -119,10 +119,14 @@ const Label = styled.label`
 const CreateAccount = styled.div`
     width: 100%;
     text-align: center;
-    margin-top: 1.5em;
+    margin-top: .75rem;
 
     & a {
         text-decoration: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 1.5em;
     }
 `
 
